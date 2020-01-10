@@ -17,7 +17,8 @@ public class LeakageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        CommonUtil commonUtil = CommonUtil.getInstance(this);
-
+       // CommonUtil commonUtil = CommonUtil.getInstance(getApplicationContext());
+       //导致LeakageActivity泄漏：
+         CommonUtil commonUtil = CommonUtil.getInstance(this);
     }
 }

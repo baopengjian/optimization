@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".lsn01.LeakageActivity"/>
+        <activity android:name=".lsn02.ListenerActivity"/>
     </application>
 
 </manifest>

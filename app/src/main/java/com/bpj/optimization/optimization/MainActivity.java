@@ -10,11 +10,14 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.bpj.optimization.optimization.lsn01.LeakageActivity;
+import com.bpj.optimization.optimization.lsn02.ListenerActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    static Class[] TARGETS = {LeakageActivity.class};
-    static String[] TARGETS_DESC = {"性能优化01_内存泄漏"};
+    static Class[] TARGETS = {LeakageActivity.class,
+            ListenerActivity.class};
+    static String[] TARGETS_DESC = {"性能优化01_内存泄漏",
+        "性能优化02_监听导致的泄漏"};
 
     private Context context;
 
