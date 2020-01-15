@@ -1,4 +1,4 @@
-package com.bpj.optimization.optimization;
+package com.bpj.optimization.optimization.lsn05;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,25 +9,28 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.bpj.optimization.optimization.lsn01.LeakageActivity;
-import com.bpj.optimization.optimization.lsn02.ListenerActivity;
-import com.bpj.optimization.optimization.lsn03.CommonLeakageCaseActivity;
-import com.bpj.optimization.optimization.lsn05.BusyUIThreadActivity;
-import com.bpj.optimization.optimization.lsn05.DataStructuresActivity;
-import com.bpj.optimization.optimization.lsn05.Lsn05Activity;
+import com.bpj.optimization.optimization.R;
 
-public class MainActivity extends AppCompatActivity {
 
-    static Class[] TARGETS = {LeakageActivity.class,
-            ListenerActivity.class,
-            CommonLeakageCaseActivity.class,
-            Lsn05Activity.class,
-            };
-    static String[] TARGETS_DESC = {"性能优化01_内存泄漏",
-            "性能优化02_监听导致的泄漏",
-            "性能优化03_常见内存泄露分析",
-            "Lsn5_UI卡顿分析之内存抖动和计算性能优化"
-            };
+/**
+ * Created by Ray on 2020-1-15.
+ */
+public class Lsn05Activity extends AppCompatActivity {
+
+    static Class[] TARGETS = {BusyUIThreadActivity.class,
+            DataStructuresActivity.class,
+            CachingActivity.class,
+            CachingActivity2.class,
+            MemoryChurnActivity.class,
+            MemoryChurnActivity2.class,
+    };
+    static String[] TARGETS_DESC = {"BusyUIThread:Display an image.(图片RGB色值变换加载)",
+            "DataStructures:Dump popular numbers to lo",
+            "Caching(计算斐波那契数列：递归)",
+            "Caching2(计算斐波那契数列：缓存优化)",
+            "MemoryChurn(排序并打印二位数组)",
+            "MemoryChurn2(排序并打印二位数组：优化后)"
+    };
 
     private Context context;
 

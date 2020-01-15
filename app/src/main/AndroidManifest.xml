@@ -16,9 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".lsn01.LeakageActivity"/>
-        <activity android:name=".lsn02.ListenerActivity"/>
-        <activity android:name=".lsn03.CommonLeakageCaseActivity"/>
+        <activity android:name=".lsn01.LeakageActivity" />
+        <activity android:name=".lsn02.ListenerActivity" />
+        <activity android:name=".lsn03.CommonLeakageCaseActivity" />
+        <activity android:name=".lsn05.DataStructuresActivity" />
+        <activity android:name=".lsn05.BusyUIThreadActivity" />
+        <activity android:name=".lsn05.CachingActivity" />
+        <activity android:name=".lsn05.CachingActivity2" />
+        <activity android:name=".lsn05.MemoryChurnActivity" />
+        <activity android:name=".lsn05.Lsn05Activity" />
+        <activity android:name=".lsn05.MemoryChurnActivity2" />
     </application>
 
 </manifest>
