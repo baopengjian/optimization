@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">optimization</string>
+    <string name="take_photo_button">Take a photo! Perhaps of a cute dog?</string>
+    <string name="photo_preview">A preview of the image that was just taken. In this sample, it is a placeholder image of an adorable puppy.</string>
+    <string name="filter_photo_button">Filter that puppy! Let it be pink!</string>
+    <string name="photo_taken">Success! Here\'s your photo!</string>
+    <string name="photo_filter">On Wednesdays, we filter pink.</string>
+    <string name="title_activity_wait_for_power">WaitForPowerActivity</string>
 </resources>

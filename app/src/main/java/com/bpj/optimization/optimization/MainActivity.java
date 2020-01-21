@@ -12,9 +12,9 @@ import android.widget.ListView;
 import com.bpj.optimization.optimization.lsn01.LeakageActivity;
 import com.bpj.optimization.optimization.lsn02.ListenerActivity;
 import com.bpj.optimization.optimization.lsn03.CommonLeakageCaseActivity;
-import com.bpj.optimization.optimization.lsn05.BusyUIThreadActivity;
-import com.bpj.optimization.optimization.lsn05.DataStructuresActivity;
+
 import com.bpj.optimization.optimization.lsn05.Lsn05Activity;
+import com.bpj.optimization.optimization.lsn08.Lsn08Activity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,12 +22,13 @@ public class MainActivity extends AppCompatActivity {
             ListenerActivity.class,
             CommonLeakageCaseActivity.class,
             Lsn05Activity.class,
+            Lsn08Activity.class
             };
     static String[] TARGETS_DESC = {"性能优化01_内存泄漏",
             "性能优化02_监听导致的泄漏",
             "性能优化03_常见内存泄露分析",
-            "Lsn5_UI卡顿分析之内存抖动和计算性能优化"
-            };
+            "性能优化05_UI卡顿分析之内存抖动和计算性能优化",
+            "性能优化08_电量优化：监控电量状态"};
 
     private Context context;
 
