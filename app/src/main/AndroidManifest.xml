@@ -30,6 +30,7 @@
         <activity android:name=".lsn05.Lsn05Activity" />
         <activity android:name=".lsn05.MemoryChurnActivity2" />
         <activity android:name=".lsn08.Lsn08Activity"/>
+        <activity android:name=".lsn08.JobSchedulerActivity"/>
         <activity
             android:name=".lsn08.WaitForPowerActivity"
             android:label="@string/title_activity_wait_for_power"

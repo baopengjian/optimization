@@ -22,6 +22,7 @@ public class Lsn08Activity extends AppCompatActivity {
 
         addButton(WaitForPowerActivity.class, "Battery-heavy is no good", rootView);
         addButton(WakeLockActivity.class, "下载时使用WakeLock", rootView);
+        addButton(JobSchedulerActivity.class, "JobScheduler代替执行下载任务", rootView);
     }
 
     public void addButton(final Class destination, String description, ViewGroup parent) {
