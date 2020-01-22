@@ -84,7 +84,9 @@ public class WaitForPowerActivity extends AppCompatActivity {
         //获取电池的充电状态
         IntentFilter filter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
         Intent intent = registerReceiver(null, filter);
-
+        if (intent == null) {
+            return false;
+        }
         //BatteryManager
         int chargePlug = intent.getIntExtra(BatteryManager.EXTRA_PLUGGED, -1);
         boolean usb = chargePlug == BatteryManager.BATTERY_PLUGGED_USB;
@@ -94,6 +96,6 @@ public class WaitForPowerActivity extends AppCompatActivity {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
             wireless = chargePlug == BatteryManager.BATTERY_PLUGGED_WIRELESS;
         }
-        return (usb||ac||wireless);
+        return (usb || ac || wireless);
     }
 }

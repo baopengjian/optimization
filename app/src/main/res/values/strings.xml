@@ -6,4 +6,6 @@
     <string name="photo_taken">Success! Here\'s your photo!</string>
     <string name="photo_filter">On Wednesdays, we filter pink.</string>
     <string name="title_activity_wait_for_power">WaitForPowerActivity</string>
+    <string name="title_activity_chatum_latinum">Chatum Latinum</string>
+    <string name="header_text">Chatum Latinum</string>
 </resources>

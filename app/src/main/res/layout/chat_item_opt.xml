@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/chat_author_avatar"
+        android:layout_width="@dimen/avatar_dimen"
+        android:layout_height="@dimen/avatar_dimen"
+        android:src="@drawable/alex" />
+
+    <TextView
+        android:id="@+id/chat_author_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/chat_author_avatar"
+        android:paddingLeft="@dimen/narrow_space"
+        android:text="XXX" />
+
+    <TextView
+        android:id="@+id/chat_datetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingRight="@dimen/narrow_space"
+        android:text="AAA"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/chat_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/chat_datetime"
+        android:layout_toRightOf="@id/chat_author_name"
+        android:paddingBottom="@dimen/chat_padding_bottom"
+        android:paddingLeft="@dimen/narrow_space"
+        android:text="BBB" />
+
+</RelativeLayout>
