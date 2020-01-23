@@ -5,7 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 import com.bpj.optimization.optimization.R;
-import com.bpj.optimization.optimization.lsn06.ChatsFragment;
+
 
 /**
  * Created by Ray on 2020-1-22.
@@ -19,6 +19,9 @@ public class BeforeOptimizationActivity extends AppCompatActivity {
         boolean optimization = false;
         if (getIntent() != null) {
             optimization = getIntent().getBooleanExtra(ChatsFragment.OPTIMIZATION, false);
+        }
+        if(optimization){
+            getWindow().setBackgroundDrawable(null);
         }
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()

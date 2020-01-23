@@ -18,7 +18,9 @@ public class CardsActivity extends AppCompatActivity {
         if (getIntent() != null) {
             optimization = getIntent().getBooleanExtra(ChatsFragment.OPTIMIZATION, false);
         }
+
         if (optimization) {
+            getWindow().setBackgroundDrawable(null);
             setContentView(R.layout.activity_droid_cards_opt);
         } else {
             setContentView(R.layout.activity_droid_cards);

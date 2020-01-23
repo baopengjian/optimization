@@ -50,10 +50,16 @@ public class ChatsFragment extends Fragment {
         }
         // Create the adapter that provides values to the UI Widgets.
         ChatAdapter adapter = new ChatAdapter(optimization, getActivity(), chats);
+        View rootView;
+        if (optimization) {
+            rootView = inflater.inflate(R.layout.fragment_chats_op, container, false);
+        } else {
+            rootView = inflater.inflate(R.layout.fragment_chats, container, false);
+        }
 
-        View rootView = inflater.inflate(R.layout.fragment_chats, container, false);
         // Find the ListView that holds all the chat messages and attach it to the adapter,
         ListView listView = (ListView) rootView.findViewById(R.id.listview_chats);
+
         listView.setAdapter(adapter);
         return rootView;
 
