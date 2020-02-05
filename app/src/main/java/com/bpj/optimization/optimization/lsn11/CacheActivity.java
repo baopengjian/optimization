@@ -23,6 +23,8 @@ import java.net.URL;
  */
 public class CacheActivity extends AppCompatActivity {
 
+    public static final String URL1 = "";//你的服务端url
+    public static final String URL2= "";//你的服务端url
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,7 +50,7 @@ public class CacheActivity extends AppCompatActivity {
             @Override
             public void run() {
                 try {
-                    HttpURLConnection conn = (HttpURLConnection) new URL("").openConnection();
+                    HttpURLConnection conn = (HttpURLConnection) new URL(URL1).openConnection();
                     conn.setRequestMethod("GET");
                     conn.setDoInput(true);
                     conn.connect();
@@ -75,7 +77,7 @@ public class CacheActivity extends AppCompatActivity {
             @Override
             public void run() {
                 try {
-                    BitmapFactory.decodeStream((InputStream) new URL("").getContent());
+                    BitmapFactory.decodeStream((InputStream) new URL(URL2).getContent());
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
