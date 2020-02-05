@@ -10,4 +10,8 @@
     <color name="joanna_color">#ff40aa52</color>
     <color name="shailen_color">#ffaa713b</color>
     <color name="chris_color">#ffaa3699</color>
+
+    <color name="none_received">#999999</color>
+    <color name="start_received">#00FF00</color>
+    <color name="stop_received">#FF0000</color>
 </resources>

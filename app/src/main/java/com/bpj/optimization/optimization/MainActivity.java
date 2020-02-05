@@ -15,6 +15,10 @@ import com.bpj.optimization.optimization.lsn03.CommonLeakageCaseActivity;
 import com.bpj.optimization.optimization.lsn05.Lsn05Activity;
 import com.bpj.optimization.optimization.lsn06.LayoutOptimizationActivity;
 import com.bpj.optimization.optimization.lsn08.Lsn08Activity;
+import com.bpj.optimization.optimization.lsn09.WakeLockActivity;
+import com.bpj.optimization.optimization.lsn10.JobSchedulerActivity;
+import com.bpj.optimization.optimization.lsn10.Lsn10Activity;
+import com.bpj.optimization.optimization.lsn11.CacheActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,14 +27,21 @@ public class MainActivity extends AppCompatActivity {
             CommonLeakageCaseActivity.class,
             Lsn05Activity.class,
             LayoutOptimizationActivity.class,
-            Lsn08Activity.class
+            Lsn08Activity.class,
+            WakeLockActivity.class,
+            JobSchedulerActivity.class,
+            Lsn10Activity.class,
+            CacheActivity.class
     };
     static String[] TARGETS_DESC = {"性能优化01_内存泄漏",
             "性能优化02_监听导致的泄漏",
             "性能优化03_常见内存泄露分析",
             "性能优化05_UI卡顿分析之内存抖动和计算性能优化",
             "性能优化06_渲染优化：布局优化",
-            "性能优化08_电量优化：监控电量状态"};
+            "性能优化08_电量优化：监控电量状态",
+            "性能优化09_WakeLock在下载任务中的简单使用",
+            "性能优化10_JobScheduler的使用",
+            "性能优化11_网络缓存"};
 
     private Context context;
 

@@ -1,4 +1,4 @@
-package com.bpj.optimization.optimization.lsn09;
+package com.bpj.optimization.optimization.lsn10;
 
 import android.app.job.JobInfo;
 import android.app.job.JobScheduler;
@@ -11,7 +11,6 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.bpj.optimization.optimization.R;
-import com.bpj.optimization.optimization.lsn09.MyJobService;
 
 /**
  * Created by Ray on 2020-1-21.

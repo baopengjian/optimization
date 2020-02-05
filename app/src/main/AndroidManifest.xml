@@ -33,7 +33,7 @@
         <activity android:name=".lsn06.CardsActivity"/>
         <activity android:name=".lsn06.BeforeOptimizationActivity"/>
         <activity android:name=".lsn08.Lsn08Activity"/>
-        <activity android:name=".lsn09.JobSchedulerActivity"/>
+        <activity android:name=".lsn10.JobSchedulerActivity"/>
         <activity
             android:name=".lsn08.WaitForPowerActivity"
             android:label="@string/title_activity_wait_for_power"
@@ -42,7 +42,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.bpj.optimization.optimization.lsn08.Lsn08Activity" />
         </activity>
-        <activity android:name=".lsn08.WakeLockActivity"/>
+        <activity android:name=".lsn09.WakeLockActivity"/>
+        <activity android:name=".lsn10.Lsn10Activity"/>
+        <activity android:name=".lsn11.CacheActivity"/>
     </application>
 
 </manifest>

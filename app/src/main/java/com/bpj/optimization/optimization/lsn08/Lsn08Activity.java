@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.bpj.optimization.optimization.R;
-import com.bpj.optimization.optimization.lsn09.JobSchedulerActivity;
 
 /**
  * Created by Ray on 2020-1-21.
@@ -22,8 +21,6 @@ public class Lsn08Activity extends AppCompatActivity {
         ViewGroup rootView = findViewById(R.id.main_rootview);
 
         addButton(WaitForPowerActivity.class, "Battery-heavy is no good", rootView);
-        addButton(WakeLockActivity.class, "下载时使用WakeLock", rootView);
-        addButton(JobSchedulerActivity.class, "JobScheduler代替执行下载任务", rootView);
     }
 
     public void addButton(final Class destination, String description, ViewGroup parent) {
