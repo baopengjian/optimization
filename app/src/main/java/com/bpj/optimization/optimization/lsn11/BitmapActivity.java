@@ -46,15 +46,20 @@ public class BitmapActivity extends AppCompatActivity {
      * 使用场景：
      * 将图片压缩后保存到本地，或者将图片上传到服务器。根据实际需求来。
      */
+    // BitmapFactory.decodeFile(pathName)
+    // BitmapFactory.decodeResource(res,id )
+    //BitmapFactory.decodeStream(is)
     public void qualitCompress(View v) {
-        // BitmapFactory.decodeFile(pathName)
-        // BitmapFactory.decodeResource(res,id )
-        //BitmapFactory.decodeStream(is)
-
         BitmapFactory.Options options = new BitmapFactory.Options();
         Bitmap bitmap = BitmapFactory.decodeFile(imageFile.getAbsolutePath(), options);
         //压缩图片
         compressImageToFile(bitmap, new File(sdFile, "qualityCompress.jpeg"));
+    }
+
+    public void sizeCompress(View v) {
+        BitmapFactory.Options options = new BitmapFactory.Options();
+        Bitmap bitmap = BitmapFactory.decodeFile(imageFile.getAbsolutePath(), options);
+        compressImageToFile(bitmap, new File(sdFile, "sizeCompress.jpeg"));
     }
 
     private void compressImageToFile(Bitmap bitmap, File file) {
@@ -74,11 +79,7 @@ public class BitmapActivity extends AppCompatActivity {
         }
     }
 
-    public void sizeCompress(View v) {
-        BitmapFactory.Options options = new BitmapFactory.Options();
-        Bitmap bitmap = BitmapFactory.decodeFile(imageFile.getAbsolutePath(), options);
-        compressImageToFile(bitmap, new File(sdFile, "sizeCompress.jpeg"));
-    }
+
 
 
     /**
@@ -113,4 +114,6 @@ public class BitmapActivity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
+
+
 }
