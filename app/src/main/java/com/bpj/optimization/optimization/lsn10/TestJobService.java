@@ -29,7 +29,7 @@ public class TestJobService extends JobService {
 
     private static final String TAG = "SyncService";
     private final LinkedList<JobParameters> jobParamsMap = new LinkedList<JobParameters>();
-    Lsn10Activity mActivity;
+    JobSchedulerSettingActivity mActivity;
 
     public void onCreate() {
         super.onCreate();
@@ -50,7 +50,7 @@ public class TestJobService extends JobService {
     public int onStartCommand(Intent intent, int flags, int startId) {
         Messenger callback = intent.getParcelableExtra("messenger");
         Message m = Message.obtain();
-        m.what = Lsn10Activity.MSG_SERVICE_OBJ;
+        m.what = JobSchedulerSettingActivity.MSG_SERVICE_OBJ;
         m.obj = this;
         try {
             callback.send(m);
@@ -87,7 +87,7 @@ public class TestJobService extends JobService {
         return true;
     }
 
-    public void setUiCallback(Lsn10Activity activity) {
+    public void setUiCallback(JobSchedulerSettingActivity activity) {
         mActivity = activity;
     }
 

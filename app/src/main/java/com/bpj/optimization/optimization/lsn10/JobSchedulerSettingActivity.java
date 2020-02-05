@@ -29,7 +29,7 @@ import com.bpj.optimization.optimization.R;
 /**
  * Created by Ray on 2020-1-23.
  */
-public class Lsn10Activity extends AppCompatActivity {
+public class JobSchedulerSettingActivity extends AppCompatActivity {
 
     private static final String TAG = "Lsn10Activity";
 
@@ -103,7 +103,7 @@ public class Lsn10Activity extends AppCompatActivity {
                 case MSG_SERVICE_OBJ:
                     mTestService = (TestJobService) msg.obj;
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                        mTestService.setUiCallback(Lsn10Activity.this);
+                        mTestService.setUiCallback(JobSchedulerSettingActivity.this);
                     }
                     break;
             }
@@ -113,7 +113,7 @@ public class Lsn10Activity extends AppCompatActivity {
     private boolean ensureTestService() {
         if (mTestService == null) {
             if (mTestService == null) {
-                Toast.makeText(Lsn10Activity.this, "Service null, never got callback?",
+                Toast.makeText(JobSchedulerSettingActivity.this, "Service null, never got callback?",
                         Toast.LENGTH_SHORT).show();
                 return false;
             }

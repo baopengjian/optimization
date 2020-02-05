@@ -43,7 +43,7 @@
                 android:value="com.bpj.optimization.optimization.lsn08.Lsn08Activity" />
         </activity>
         <activity android:name=".lsn09.WakeLockActivity"/>
-        <activity android:name=".lsn10.Lsn10Activity"/>
+        <activity android:name=".lsn10.JobSchedulerSettingActivity"/>
         <activity android:name=".lsn11.CacheActivity"/>
     </application>
 
