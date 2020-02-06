@@ -56,12 +56,6 @@ public class BitmapActivity extends AppCompatActivity {
         compressImageToFile(bitmap, new File(sdFile, "qualityCompress.jpeg"));
     }
 
-    public void sizeCompress(View v) {
-        BitmapFactory.Options options = new BitmapFactory.Options();
-        Bitmap bitmap = BitmapFactory.decodeFile(imageFile.getAbsolutePath(), options);
-        compressImageToFile(bitmap, new File(sdFile, "sizeCompress.jpeg"));
-    }
-
     private void compressImageToFile(Bitmap bitmap, File file) {
         //0 ~ 100
         int quality = 50;
@@ -79,7 +73,12 @@ public class BitmapActivity extends AppCompatActivity {
         }
     }
 
-
+    public void sizeCompress(View v) {
+        BitmapFactory.Options options = new BitmapFactory.Options();
+        Bitmap bitmap = BitmapFactory.decodeFile(imageFile.getAbsolutePath(), options);
+        //压缩图片
+        compressBitmapToFileBySize(bitmap, new File(sdFile, "sizeCompress.jpeg"));
+    }
 
 
     /**
@@ -115,5 +114,44 @@ public class BitmapActivity extends AppCompatActivity {
         }
     }
 
+    public void compressBitmap(View v) {
+        compressBitmap(imageFile.getAbsolutePath(),  new File(sdFile, "CompressBitmap.jpeg"));
+    }
+
+
+    /**
+     * 3. 设置图片的采样率，降低图片像素
+     * @param filePath
+     * @param file
+     */
+    public static void compressBitmap(String filePath, File file){
+        // 数值越高，图片像素越低
+        int inSampleSize = 8;
+        BitmapFactory.Options options = new BitmapFactory.Options();
+        options.inJustDecodeBounds = false;
+//	        options.inJustDecodeBounds = true;//为true的时候不会真正加载图片，而是得到图片的宽高信息。
+        //采样率
+        options.inSampleSize = inSampleSize;
+        Bitmap bitmap = BitmapFactory.decodeFile(filePath, options);
+
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        // 把压缩后的数据存放到baos中
+        bitmap.compress(Bitmap.CompressFormat.JPEG, 100 ,baos);
+        try {
+            if(file.exists())
+            {
+                file.delete();
+            }
+            else {
+                file.createNewFile();
+            }
+            FileOutputStream fos = new FileOutputStream(file);
+            fos.write(baos.toByteArray());
+            fos.flush();
+            fos.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
 }
