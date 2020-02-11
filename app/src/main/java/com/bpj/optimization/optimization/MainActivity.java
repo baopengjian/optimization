@@ -20,6 +20,7 @@ import com.bpj.optimization.optimization.lsn10.JobSchedulerActivity;
 import com.bpj.optimization.optimization.lsn10.JobSchedulerSettingActivity;
 import com.bpj.optimization.optimization.lsn11.BitmapActivity;
 import com.bpj.optimization.optimization.lsn11.CacheActivity;
+import com.bpj.optimization.optimization.lsn12.Lsn12Activity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,7 +34,8 @@ public class MainActivity extends AppCompatActivity {
             JobSchedulerActivity.class,
             JobSchedulerSettingActivity.class,
             CacheActivity.class,
-            BitmapActivity.class
+            BitmapActivity.class,
+            Lsn12Activity.class
     };
     static String[] TARGETS_DESC = {"性能优化01_内存泄漏",
             "性能优化02_监听导致的泄漏",
@@ -45,7 +47,8 @@ public class MainActivity extends AppCompatActivity {
             "性能优化10_JobScheduler的简单使用",
             "性能优化10_JobScheduler的任务监听",
             "性能优化11_Http请求缓存",
-            "性能优化11_Bitmap压缩"
+            "性能优化11_Bitmap压缩",
+            "性能优化12_Android高清显示图片：哈夫曼算法(ExternalCacheDir查看对比效果)"
             };
 
     private Context context;

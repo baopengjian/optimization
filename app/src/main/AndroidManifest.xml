@@ -2,9 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.bpj.optimization.optimization">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -29,22 +30,23 @@
         <activity android:name=".lsn05.MemoryChurnActivity" />
         <activity android:name=".lsn05.Lsn05Activity" />
         <activity android:name=".lsn05.MemoryChurnActivity2" />
-        <activity android:name=".lsn06.LayoutOptimizationActivity"/>
-        <activity android:name=".lsn06.CardsActivity"/>
-        <activity android:name=".lsn06.BeforeOptimizationActivity"/>
-        <activity android:name=".lsn08.Lsn08Activity"/>
-        <activity android:name=".lsn10.JobSchedulerActivity"/>
+        <activity android:name=".lsn06.LayoutOptimizationActivity" />
+        <activity android:name=".lsn06.CardsActivity" />
+        <activity android:name=".lsn06.BeforeOptimizationActivity" />
+        <activity android:name=".lsn08.Lsn08Activity" />
+        <activity android:name=".lsn10.JobSchedulerActivity" />
         <activity
             android:name=".lsn08.WaitForPowerActivity"
             android:label="@string/title_activity_wait_for_power"
-            android:parentActivityName="com.bpj.optimization.optimization.lsn08.Lsn08Activity" >
+            android:parentActivityName="com.bpj.optimization.optimization.lsn08.Lsn08Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.bpj.optimization.optimization.lsn08.Lsn08Activity" />
         </activity>
-        <activity android:name=".lsn09.WakeLockActivity"/>
-        <activity android:name=".lsn10.JobSchedulerSettingActivity"/>
-        <activity android:name=".lsn11.CacheActivity"/>
+        <activity android:name=".lsn09.WakeLockActivity" />
+        <activity android:name=".lsn10.JobSchedulerSettingActivity" />
+        <activity android:name=".lsn11.CacheActivity" />
+        <activity android:name=".lsn12.Lsn12Activity" />
     </application>
 
 </manifest>
