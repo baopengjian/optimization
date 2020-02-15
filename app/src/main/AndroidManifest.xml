@@ -5,7 +5,8 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -47,6 +48,7 @@
         <activity android:name=".lsn10.JobSchedulerSettingActivity" />
         <activity android:name=".lsn11.CacheActivity" />
         <activity android:name=".lsn12.Lsn12Activity" />
+        <activity android:name=".lsn13.Lsn13Activity"/>
     </application>
 
 </manifest>
