@@ -49,6 +49,8 @@
         <activity android:name=".lsn11.CacheActivity" />
         <activity android:name=".lsn12.Lsn12Activity" />
         <activity android:name=".lsn13.Lsn13Activity"/>
+        <activity android:name=".lsn14.Lsn14Activity"/>
+
     </application>
 
 </manifest>

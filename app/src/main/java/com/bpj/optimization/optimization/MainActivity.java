@@ -22,6 +22,7 @@ import com.bpj.optimization.optimization.lsn11.BitmapActivity;
 import com.bpj.optimization.optimization.lsn11.CacheActivity;
 import com.bpj.optimization.optimization.lsn12.Lsn12Activity;
 import com.bpj.optimization.optimization.lsn13.Lsn13Activity;
+import com.bpj.optimization.optimization.lsn14.Lsn14Activity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -37,7 +38,8 @@ public class MainActivity extends AppCompatActivity {
             CacheActivity.class,
             BitmapActivity.class,
             Lsn12Activity.class,
-            Lsn13Activity.class
+            Lsn13Activity.class,
+            Lsn14Activity.class
     };
     static String[] TARGETS_DESC = {"性能优化01_内存泄漏",
             "性能优化02_监听导致的泄漏",
