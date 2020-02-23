@@ -23,6 +23,7 @@ import com.bpj.optimization.optimization.lsn11.CacheActivity;
 import com.bpj.optimization.optimization.lsn12.Lsn12Activity;
 import com.bpj.optimization.optimization.lsn13.Lsn13Activity;
 import com.bpj.optimization.optimization.lsn14.Lsn14Activity;
+import com.bpj.optimization.optimization.lsn16.Lsn16Activity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,7 +40,8 @@ public class MainActivity extends AppCompatActivity {
             BitmapActivity.class,
             Lsn12Activity.class,
             Lsn13Activity.class,
-            Lsn14Activity.class
+            Lsn14Activity.class,
+            Lsn16Activity.class
     };
     static String[] TARGETS_DESC = {"性能优化01_内存泄漏",
             "性能优化02_监听导致的泄漏",
@@ -53,7 +55,9 @@ public class MainActivity extends AppCompatActivity {
             "性能优化11_Http请求缓存",
             "性能优化11_Bitmap压缩",
             "性能优化12_Android高清显示图片：哈夫曼算法(ExternalCacheDir查看对比效果)",
-            "性能优化13_数据传输效率优化"
+            "性能优化13_数据传输效率优化",
+            "性能优化14_多线程优化",
+            "性能优化16_热修复"
             };
 
     private Context context;

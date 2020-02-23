@@ -50,6 +50,7 @@
         <activity android:name=".lsn12.Lsn12Activity" />
         <activity android:name=".lsn13.Lsn13Activity"/>
         <activity android:name=".lsn14.Lsn14Activity"/>
+        <activity android:name=".lsn16.Lsn16Activity"/>
 
     </application>
 
