@@ -27,6 +27,9 @@ import com.bpj.optimization.optimization.lsn16.Lsn16Activity;
 import com.bpj.optimization.optimization.lsn17.floatwindow.Lsn17_FloatWindowActivity;
 import com.bpj.optimization.optimization.lsn17.onepixel.Lsn17StartServiceActivity;
 import com.bpj.optimization.optimization.lsn17.service.Lsn17_Activiy;
+import com.bpj.optimization.optimization.lsn18.start.Lsn18Activity01;
+import com.bpj.optimization.optimization.lsn19.loader.Lsn19LoaderActivity;
+import com.bpj.optimization.optimization.lsn19.threadandroid.HandlerThreadActivity1;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -47,7 +50,10 @@ public class MainActivity extends AppCompatActivity {
             Lsn16Activity.class,
             Lsn17StartServiceActivity.class,
             Lsn17_Activiy.class,
-            Lsn17_FloatWindowActivity.class
+            Lsn17_FloatWindowActivity.class,
+            Lsn18Activity01.class,
+            HandlerThreadActivity1.class,
+            Lsn19LoaderActivity.class
     };
     static String[] TARGETS_DESC = {"性能优化01_内存泄漏",
             "性能优化02_监听导致的泄漏",
@@ -66,7 +72,10 @@ public class MainActivity extends AppCompatActivity {
             "性能优化16_热修复",
             "性能优化17_1像素保活",
             "性能优化17_双进程守护+JobService保活",
-            " 性能优化17_悬浮框"
+            "性能优化17_悬浮框",
+            "性能优化18_启动优化",
+            "性能优化19_HandlerThread",
+            "性能优化19_Loader"
     };
 
     private Context context;

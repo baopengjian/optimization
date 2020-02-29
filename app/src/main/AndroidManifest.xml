@@ -2,10 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.bpj.optimization.optimization">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
@@ -60,6 +62,14 @@
 
         <activity android:name=".lsn17.service.Lsn17_Activiy" />
         <activity android:name=".lsn17.floatwindow.Lsn17_FloatWindowActivity"/>
+        <activity android:name=".lsn18.start.Lsn18Activity01"/>
+        <activity android:name=".lsn18.start.Lsn18Activity02"/>
+        <activity android:name=".lsn18.splash.Lsn18SplashActivity"/>
+        <activity android:name=".lsn19.threadandroid.AsyncTaskActivity1"/>
+        <activity android:name=".lsn19.threadandroid.HandlerThreadActivity1"/>
+        <activity android:name=".lsn19.threadandroid.HandlerThreadActivity2"/>
+        <activity android:name=".lsn19.threadandroid.IntentServiceActivity"/>
+        <activity android:name=".lsn19.threadandroid.Lsn19Activity"/>
 
         <service android:name=".lsn17.service.LocalService" />
         <service
@@ -72,6 +82,7 @@
         <service android:name=".lsn17.onepixel.MyService" />
 
         <service android:name=".lsn17.floatwindow.FloatWindowService"/>
+        <service android:name=".lsn19.threadandroid.MyIntentService"/>
     </application>
 
 </manifest>
